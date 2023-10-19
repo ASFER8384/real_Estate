@@ -6,6 +6,10 @@ import SwiperCore from 'swiper';
 import 'swiper/css/bundle';
 import ListingItem from '../components/ListingItem';
 
+import "../style/Home.css"
+import Banner from './Banner';
+import About from './About';
+
 export default function Home() {
   const [offerListings, setOfferListings] = useState([]);
   const [saleListings, setSaleListings] = useState([]);
@@ -46,15 +50,19 @@ export default function Home() {
     fetchOfferListings();
   }, []);
   return (
-    <div>
+    <div className='home'>
+
+      <Banner/>
+
+
       {/* top */}
-      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
-        <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>
+      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto home-title'>
+        <h1 className='text-slate-700 font-bold  home-title-title'>
           Find your next <span className='text-slate-500'>perfect</span>
           <br />
           place with ease
         </h1>
-        <div className='text-gray-400 text-xs sm:text-sm'>
+        <div className='  home-title-subtitle'>
           Sweet Home is the best place to find your next perfect place to
           live.
           <br />
@@ -62,9 +70,9 @@ export default function Home() {
         </div>
         <Link
           to={'/search'}
-          className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'
+          className='text-xs sm:text-sm  font-bold hover:underline building-btn'
         >
-          Let's get started...
+          <span>Book Now!</span>
         </Link>
       </div>
 
@@ -88,7 +96,7 @@ export default function Home() {
 
       {/* listing results for offer, sale and rent */}
 
-      <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 my-10'>
+      <div className='max-w-6xl mx-auto p-5 flex flex-col gap-8 my-10'>
         {offerListings && offerListings.length > 0 && (
           <div className=''>
             <div className='my-3'>
@@ -128,7 +136,10 @@ export default function Home() {
             </div>
           </div>
         )}
-      </div>
+      </div>     
+      <About/>
+
     </div>
+    
   );
 }

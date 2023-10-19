@@ -1,0 +1,15 @@
+header{
+    /* border: 1px solid black; */
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.nav-input{
+    border: 1px solid black;
+    /* border-radius: 10px; */
+    padding: 10px;
+}
+
+/* .search-icon{
+    margin-left: 10px;
+} */

@@ -1,0 +1,26 @@
+.banner{
+    min-height:80vh;
+    /* border: 1px solid black; */
+    /* background-color: white !important; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+.banner-title{
+    font-size: 5vw;
+    align-self: center;
+}
+
+.banner-image{
+    /* width: 500px; */
+    height: 400px;
+    object-fit: contain;
+    align-self: center;
+}
+
+@media (max-width:980px) {
+    .banner{
+        flex-direction: column;
+    }
+}

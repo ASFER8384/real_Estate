@@ -71,7 +71,7 @@ export default function Footer() {
       </div>
 
           <div className="footer_bottom" style={{padding:"0px"}}>
-              <p className="">© cakecounter Inc.. 2019 All rights reserved.</p>
+              <p className="">© sweet home Inc.. 2023 All rights reserved.</p>
       </div>
     </footer>
   );

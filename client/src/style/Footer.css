@@ -8,8 +8,21 @@
   }
 
   @media (max-width:980px) {
-    .dn-ft{
-        display: none;
+  
+ 
+    .terms{
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    /* .download h3{
+      text-align: center;
+    } */
+  }
+
+  @media (max-width:600px) {
+    .footercontent{
+      flex-direction: column;
+      margin-left: 30px;
     }
   }
   

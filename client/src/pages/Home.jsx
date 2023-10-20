@@ -54,7 +54,6 @@ export default function Home() {
 
       <Banner/>
 
-
       {/* top */}
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto home-title'>
         <h1 className='text-slate-700 font-bold  home-title-title'>

@@ -24,7 +24,7 @@ export default function Footer() {
               </div>
             </div> */}
             <div className="dn-ft">
-              <div className="">
+              <div className="download">
                 <h3 className="f-title f_600 t_color f_size_18">Download</h3>
                 <ul className="list-unstyled f_list">
                   <li><a href="#">Company</a></li>
@@ -37,7 +37,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="">
-              <div className="">
+              <div className="terms">
                 <h3 className="f-title f_600 t_color f_size_18">Help</h3>
                 <ul className="list-unstyled f_list">
                   <li><a href="#">FAQ</a></li>
